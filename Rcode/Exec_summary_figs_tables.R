@@ -863,7 +863,8 @@ mngmt = mngmt[,-1]
   # SPR ratio and exploitation
   SPRratio_Exploit_mod1 = SPRratio_Exploit_mod1[,c(2,4)]
   SPRratio_Exploit_mod1[,c(1,2)] = round(SPRratio_Exploit_mod1[,c(1,2)],2)
-  SPRratio_Exploit_mod1 = SPRratio_Exploit_mod1[-dim(SPRratio_Exploit_mod1)[1],]
+  #SPRratio_Exploit_mod1 = SPRratio_Exploit_mod1[-dim(SPRratio_Exploit_mod1)[1],]
+  SPRratio_Exploit_mod1 = SPRratio_Exploit_mod1[2:dim(SPRratio_Exploit_mod1)[1],]
 
   # SPR blanks for the last year
   blanks = c(NA,NA)
